@@ -17,9 +17,9 @@
 			<div class="top">
 				<nav>
 					<ul class="links">
-						<li><a href="index.php">Home</a></li>
-						<li><a href="sobre.php">Sobre</a></li>
-						<li><a href="interesses.php">Interesses</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="interesses.html">Interesses</a></li>
 					</ul>
 				</nav>
 
@@ -90,7 +90,7 @@
 					<li><img src="assets/images/status-forca.png"><b>Força</b> <span>210</span></li>
 					<li><img src="assets/images/status-destreza.png"><b>Destreza</b> <span>200</span></li>
 					<li><img src="assets/images/status-vitalidade.png"><b>Vitalidade</b> <span>230</span></li>
-					<li><img src="assets/images/status-magia.png" class="_ester"><b>Magia</b> <span>180</span></li>
+					<li><img src="assets/images/status-magia.png" class="est"><b>Magia</b> <span>180</span></li>
 					<li><img src="assets/images/status-espirito.png"><b>Espírito</b> <span>255</span></li>
 					<li><img src="assets/images/status-ataque.png"><b>Ataque</b> <span>220</span></li>
 					<li><img src="assets/images/status-defesa.png"><b>Defesa</b> <span>165</span></li>
@@ -110,5 +110,18 @@
 	</footer>
 
 	<script type="text/javascript" src="assets/js/app.min.js"></script>
+
+	<script>
+		// Ester
+		var countClicks = 0;
+
+		$('.est').click(function(event) {
+		    countClicks++;
+
+		    if (countClicks >= 15) {
+		        window.location.replace('egg.html');
+		    }
+		});
+	</script>
 </body>
 </html>

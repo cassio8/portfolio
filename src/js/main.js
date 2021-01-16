@@ -25,16 +25,4 @@ $(function() {
         localStorage.setItem('verify_cookies', true);
         $('.Cookies').addClass('_hide');
     });
-
-    // Ester
-    var countClicks = 0;
-
-    $('._ester').click(function(event) {
-        countClicks++;
-
-        if (countClicks >= 15) {
-            window.location.replace('egg.php');
-        }
-    });
-
 });
