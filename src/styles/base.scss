@@ -1,0 +1,93 @@
+// GERAL
+.container {
+	position: relative;
+	width: 1170px;
+	margin: 0 auto;
+
+	@include breakpoint(0, $lg) {
+		width: 940px;
+	}
+
+	@include breakpoint(0, $md) {
+		width: 740px;
+	}
+
+	@include breakpoint(0, $sm) {
+		width: 90%;
+	}
+}
+
+body {
+	background-color: #000;
+}
+
+a {
+	text-decoration: none;
+}
+
+b {
+	color: $green;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, li {
+	text-shadow: 1px 1px #000;
+}
+
+.Button {
+	position: relative;
+	padding: 0 12px 0 52px;
+	height: 46px;
+	line-height: 42px;
+	border-radius: 50px;
+	text-shadow: none;
+
+	img {
+		position: absolute;
+		left: 12px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&._outline {
+		&:hover {
+			color: #000;
+			background-color: #fff;
+			border-color: #fff;
+		}
+	}
+}
+
+.Footer {
+	margin: 100px 0 0;
+	text-align: center;
+
+	p {
+		margin: 0;
+		padding: 30px 0;
+		font-size: 9px;
+	}
+}
+
+.pointer {
+	cursor: pointer;
+
+	&:hover {
+		color: $green;
+	}
+}
+
+@include breakpoint(0, $md) {
+	body {
+		font-size: 12px;
+	}
+}
+
+@include breakpoint(0, $sm) {
+	h6, ._h6 {
+		font-size: 13px;
+	}
+
+	.Footer {
+		margin: 40px 0 0;
+	}
+}
